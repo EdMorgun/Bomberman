@@ -1,0 +1,14 @@
+<RCC>
+    <qresource prefix="/">
+        <file>Levels/level1.txt</file>
+        <file>Images/1.png</file>
+        <file>Images/2.png</file>
+        <file>Images/3.png</file>
+        <file>Images/4.png</file>
+        <file>Images/balloon.png</file>
+        <file>Images/bomb.png</file>
+        <file>Images/bomberman.png</file>
+        <file>Images/5.png</file>
+        <file>Images/6.png</file>
+    </qresource>
+</RCC>

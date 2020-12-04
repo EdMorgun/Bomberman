@@ -1,0 +1,32 @@
+#ifndef PHYSICUNIT_H
+#define PHYSICUNIT_H
+
+#include "physicalobject.h"
+
+class PhysicalUnit : public PhysicalObject
+{
+public:
+    PhysicalUnit(int x, int y, int id);
+    bool checkCollision(PhysicalObject ***cells) override final;
+    bool checkCollision(std::vector<PhysicalObject> bombs) override final;
+    bool checkCollision(PhysicalUnit *object);
+    int getX() override final;
+    int getY() override final;
+    int getID() override final;
+
+
+    int getVector();
+    bool getStone();
+    bool getDead();
+
+    void comeBack();
+    void move();
+
+protected:
+    int x, y, id;
+    bool stone, dead;
+    int vector, step;
+
+};
+
+#endif // PHYSICUNIT_H
